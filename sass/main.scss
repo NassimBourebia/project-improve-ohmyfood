@@ -5,30 +5,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 
-*{
+* {
    margin: 0;
    padding: 0;
    font-family: 'roboto', sans-serif;
    box-sizing: border-box;
 }
+
 //Header 
 
-header{
- 
-   height: 63px; 
+header {
+
+   height: 63px;
    text-align: center;
 
-   h1{
+   h1 {
       padding-top: 17px;
    }
 }
 
-main{
+main {
    background-color: $silver-gray-color;
 }
 
 //Banner Location
-#bannerlocation{
+#bannerlocation {
    display: flex;
    justify-content: center;
    align-self: center;
@@ -36,36 +37,36 @@ main{
    height: 50px;
    background-color: #EAEAEA;
 
-   i{
+   i {
       margin-right: 13px;
    }
 
-   P{
+   P {
       font-weight: 500;
       font-size: 16px;
    }
 }
 
-.reservation{
+.reservation {
 
-   border: solid 1px red;
+
    height: 265px;
    display: flex;
    flex-direction: column;
    gap: 1rem;
 
-   h2{
+   h2 {
       padding: 2rem 3rem 0 3rem;
       text-align: center;
    }
-   
-   p{
+
+   p {
       text-align: center;
       margin-left: 8px;
       margin-right: 8px;
    }
 
-   button{
+   button {
       font-size: 16px;
       margin-top: 10px;
       margin-left: auto;
@@ -75,46 +76,111 @@ main{
 
 
 
-#explorebtn{
+#explorebtn {
    width: 218px;
    height: 50px;
    border: none;
    color: white;
    border-radius: 25px;
-   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%); 
+   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 
-   &:hover{
+   &:hover {
       background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
    }
 }
 
-#functioning{
+#functioning {
    height: 440px;
    width: 100%;
    background-color: white;
-   border: solid 1px red;
+   // border: solid 1px red;
    display: flex;
    flex-direction: column;
-}
-.functioning__btn{
 
-   h3{
+   h3 {
       font-size: 24px;
       font-weight: 700;
+      margin-top: 48px;
+      padding-left: 20px;
    }
-  display: flex;
-  flex-direction: column;
-  margin-top: 48px;
-  gap: 1.5rem;
+}
 
-  button{
-   border: none;
-   font-size: 16px;
-   font-weight: 500;
-   max-width: 322.49px;
-   height: 72.38px;
-   border-radius: 20px;
-   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  }
+.functioning__btn {
+
+
+   display: flex;
+   flex-direction: column;
+   padding: 26px 20px 68px 35px;
+   gap: 1.5rem;
+
+   button {
+      border: none;
+      font-size: 16px;
+      font-weight: 500;
+      width: 100%;
+      height: 72.38px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+   }
+
+   #functioning__ol {
+
+      width: 100%;
+      counter-reset: my-awesome-counter;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      li {
+         counter-increment: my-awesome-counter;
+         position: relative;
+      }
+
+      li::before {
+         content: counter(my-awesome-counter);
+         color: white;
+         font-size: 15px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-weight: bold;
+         position: absolute;
+         --size: 32px;
+         left: calc(-1 * var(--size) - 10px);
+         line-height: var(--size);
+         width: 24px;
+         height: 24px;
+         top: 25px;
+         left: -18px;
+         background: #9356DC;
+         border-radius: 50%;
+         text-align: center;
+         box-shadow: 1px 1px 0 #999;
+      }
+   }
+}
+
+.fa-mobile-screen {
+
+   margin-right: 27px;
+
+   :hover {
+      color: #9356DC;
+   }
+}
+.fa-list {
+   margin-right: 23px;
+
+   :hover {
+      color: #9356DC;
+   }
+
+}
+.fa-store {
+   margin-right: 20px;
+
+   :hover {
+      color: #9356DC;
+   }
 }
