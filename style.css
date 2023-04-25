@@ -3,8 +3,12 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
   font-family: "roboto", sans-serif;
   box-sizing: border-box;
+}
+* a {
+  color: black;
 }
 
 header {
@@ -151,6 +155,87 @@ main {
 }
 .fa-store :hover {
   color: #9356DC;
+}
+
+#restaurants {
+  padding: 20px 20px 20px 20px;
+  list-style: none;
+}
+
+#restaurants li {
+  list-style: none;
+}
+
+.restaurant__text {
+  padding-left: 14px;
+}
+
+.restaurant__link {
+  display: block;
+  border: solid 1px red;
+  width: 340px;
+  height: 251px;
+  border-radius: 15px;
+}
+.restaurant__link img {
+  height: 69.32%;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.restaurant__card {
+  width: 340px;
+  height: 251px;
+  position: relative;
+}
+
+.label_new {
+  position: absolute;
+  font-size: 14px;
+  height: 29px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #008766;
+  font-weight: 500;
+  background: #99E2D0;
+  top: 15px;
+  right: 15px;
+}
+
+.fa-heart {
+  color: black;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0%;
+  font-size: 22px;
+  right: 6%;
+  top: 77%;
+}
+
+.after-heart {
+  color: #9356DC;
+  font-size: 22px;
+  right: 6%;
+  top: 77%;
+  z-index: 1;
+  position: absolute;
+  transition: opacity 0.9s ease-in-out;
+  opacity: 0;
+}
+
+.after-heart:hover {
+  opacity: 1;
+}
+
+.restaurant__text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
