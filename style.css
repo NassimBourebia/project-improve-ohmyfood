@@ -19,6 +19,10 @@ header h1 {
   padding-top: 17px;
 }
 
+#ohmyfood {
+  width: 162px;
+}
+
 main {
   background-color: #F7F7F7;
 }
@@ -160,6 +164,14 @@ main {
 #restaurants {
   padding: 20px 20px 20px 20px;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#restaurants ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 #restaurants li {
@@ -172,8 +184,8 @@ main {
 
 .restaurant__link {
   display: block;
-  border: solid 1px red;
-  width: 340px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
   height: 251px;
   border-radius: 15px;
 }
@@ -185,7 +197,7 @@ main {
 }
 
 .restaurant__card {
-  width: 340px;
+  width: 100%;
   height: 251px;
   position: relative;
 }
@@ -236,6 +248,28 @@ main {
   flex-direction: column;
   margin-top: 12px;
   margin-bottom: 12px;
+}
+
+.withlogo {
+  color: white;
+}
+
+footer {
+  background-color: #353535;
+  padding: 22px 0 22px 25px;
+}
+footer ul {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+footer li {
+  list-style: none;
+  color: white;
+}
+footer li i {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
