@@ -79,7 +79,7 @@ main {
 }
 
 #functioning {
-  height: 440px;
+  max-height: 440px;
   width: 100%;
   background-color: white;
   display: flex;
@@ -270,6 +270,28 @@ footer li {
 }
 footer li i {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  #functioning__ol {
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 37px !important;
+  }
+  #functioning__ol li {
+    width: 322px;
+  }
+  #restaurants {
+    background-color: white;
+  }
+  #restaurants ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #restaurants ul li {
+    width: 490px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

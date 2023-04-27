@@ -99,7 +99,7 @@ main {
 }
 
 #functioning {
-   height: 440px;
+   max-height: 440px;
    width: 100%;
    background-color: white;
    // border: solid 1px red;
@@ -321,3 +321,37 @@ footer{
    }
    }
 }
+
+
+//Media queries 
+
+@media screen and (min-width: 1024px) {
+
+   #functioning__ol {
+          flex-direction:row !important;
+          justify-content:center !important;
+          gap:37px !important;
+
+          li{
+            width: 322px;
+          }
+   }
+
+   #restaurants{
+      background-color: white;
+     
+      ul{
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: center;
+
+         li{
+            width: 490px;
+         }
+      }
+
+   }
+   
+   }
+   
+   
