@@ -325,7 +325,7 @@ footer{
 
 //Media queries 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
 
    #functioning__ol {
           flex-direction:row !important;
@@ -346,10 +346,31 @@ footer{
          justify-content: center;
 
          li{
-            width: 490px;
+            width: 470px;
          }
       }
 
+   }
+
+   footer{
+
+      height: 114px;
+      flex-direction: row-reverse !important;
+      align-items: center !important;
+
+      img{
+
+         height: 27px;
+         margin-top: 1.5%;
+         margin-right: 3.5%;
+         margin-left: 7%;
+      }
+
+      ul{
+
+         flex-direction: row;
+         gap: 2.5rem;
+      }
    }
    
    }
